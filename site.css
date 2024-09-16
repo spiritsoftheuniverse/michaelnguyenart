@@ -1,0 +1,96 @@
+body {
+        background:#000a09;
+        color:#999;
+        padding:0;
+        margin:0;
+        font-family: "abel";
+        font-size:18px;
+}
+.bodyGrid
+{
+        position:fixed;
+        background-image:url(images/grid.png);
+        width:100%;
+        height:100%;
+        top:0;
+        left:0;
+        opacity:0.035;
+        animation: moveBackground 60s linear infinite;
+        z-index:-1;
+}
+@keyframes moveBackground
+{
+        0% {
+                background-position-y: center;
+            }
+            100% {
+                background-position-y: center 20px; /* Move background image up by 20px */
+            }
+}
+a:visited
+{
+        color:#4d85ff
+}
+a:link
+{
+        color:#4d85ff
+}
+a:hover
+{
+        color:#ffc400
+}
+.buttoncontainer
+{
+        display: flex;
+        justify-content : center;
+        padding: 8px;
+        padding-top:0;
+}
+.button
+{
+        
+        border: 1px solid rgba(128, 255, 255, 0.15);
+        border-top:none;
+        background-color:rgba(128, 255, 255, 0.05);
+        color: white;
+        padding: 20px;
+        margin-top:0;
+}
+.buttonSelected
+{
+        
+        border: 1px solid rgba(128, 255, 255, 0.05);
+        border-top:none;
+        background-color:rgba(128, 255, 255, 0.025);
+        color: rgb(92, 161, 150);
+        padding: 20px;
+        margin-top:0;
+}
+.buttonseparator
+{
+        margin:2px;
+        background-color:rgba(128, 255, 255, 0.15);
+        width:4px; height:4px;
+        display:flex;
+        align-self:center;
+        justify-self:center;
+}
+.button:hover{
+        
+        border: 1px solid rgba(128, 255, 255, 0.35);
+        border-top:none;
+        background-color:rgba(128, 255, 255, 0.1);
+        cursor:pointer;
+}
+.abel-regular {
+        font-family: "abel", sans-serif;
+        font-weight: 400;
+        font-style: normal;
+}
+.contentbody
+{
+        padding:4px;
+        max-width: 1024px;
+        margin:0 auto;
+        margin-top:12px;
+}
