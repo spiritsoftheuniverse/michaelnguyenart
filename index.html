@@ -7,8 +7,11 @@
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
         <link href="https://fonts.googleapis.com/css2?family=Abel&display=swap" rel="stylesheet">
         <link rel="stylesheet" href="site.css">
+        <link rel="stylesheet" href="lightbox/css/lightbox.css">
         <script src="jquery.js"></script>
         <script src="site.js"></script>
+        <script src="artwork.js"></script>
+        <script src="lightbox/js/lightbox.js"></script>
         <!-- SEO Meta Tags -->
         <meta name="title" content="Michael Nguyen Art">
         <meta name="description" content="The artworks of Michael Nguyen.">
@@ -35,10 +38,11 @@
         <div class="buttoncontainer">
                 <div class="buttonseparator"></div>
                 <div class="buttonSelected" id="homebutton" style="border-bottom-left-radius:8px;">Michael Nguyen</div> <div class="buttonseparator"></div>
-                <div class="button" id="artbutton" style="border-bottom-left-radius:8px;">Art</div> <div class="buttonseparator"></div>
-                <div class="button" id="musicbutton" style="border-bottom-left-radius:8px;">Music</div> <div class="buttonseparator"></div>
+                <div class="button" id="artbutton">Art</div> <div class="buttonseparator"></div>
+                <div class="button" id="musicbutton">Music</div> <div class="buttonseparator"></div>
                 <div class="button" id="videogamesbutton">Video Games</div> <div class="buttonseparator"></div>
                 <div class="button" id="killbutton">Kill</div> <div class="buttonseparator"></div>
+                <div class="button" id="friendsbutton"  style="border-bottom-right-radius:8px;">Friends</div> <div class="buttonseparator"></div>
         </div>
         <div class="contentbody" id="contentbody">
                 <div id="homeContent">
@@ -49,27 +53,34 @@
                                 Lots of processes were whittled out through the years, although what remains today are visual arts, 3d modeling/animation, audio engineering, music production, and game development.
                         </p>
                         <p>
-                                On my downtime, I enjoy uniquely crafted video games from a time before accessibility was an option for players. 
+                                On my downtime, I enjoy uniquely crafted video games from a time where hidden techniques were a thing. 
                                 I also love playing guitar, as it is a rhythmic activity which requires excessive amounts of technical ability depending on your temperament.
-                                All things find their way into the spiral of meaning, no matter how big or small, so being ignorant is a tough sell for me, but apparently incredibly easy for the population at large.
-                                Get that mind right.
+                                All things find their way into the spiral of meaning, no matter how big or small.
+                                Get that mind right and come correct with those manners the best you can. 
+                                Nothing makes it any easier, not even the internet.
                         </p>
                         <p style="text-align:center">
                                 Join the cozy Discord server to hang out and progress together.<br>
-                                <a href="https://discord.gg/ZhUU69vCXy" style="border:none;"><img id="dclogo" src="images/dc.png" style="padding-top:12px;opacity:0.5;"></a>
+                                <a class="discordLink" style="border:none;"><img id="dclogo" src="images/dc.png" style="padding-top:12px;opacity:0.5;"></a>
                         </p>
                         
                         <p style="text-align:center">
                                 Subscribe to the Youtube channel to see godlike gameplay.<br>
-                                <a href="https://www.youtube.com/@michaelnguyenart" style="border:none;"><img id="ytlogo" src="images/yt.png" style="padding-top:12px; opacity:0.5;"></a>
+                                <a class="ytLink"  style="border:none;"><img id="ytlogo" src="images/yt.png" style="padding-top:12px; opacity:0.5;"></a>
                         </p>
                 </div>
                 <div id="artContent" style="display:none">
-                        Art
+                        Here are sets of artworks categorized by year and curated for brevity.
+                        As with any artist, some years were droughts, and some were dedicated to other things such as game development and/or music creation.
+                        <p class="monofont" id="artDates" style="line-height:1.6">
+                        </p>
+                        <div id="artworksbody"></div>
                 </div>
                 <div id="musicContent" style="display:none">
                         I fell in love with the making of music because I hung out with more musicians than I did artists. Time is of the essence, and there isn't any activity more fluid for the cause than music.
                         My instrument of choice is guitar, played over compositions produced with audio samples to simulate the presence of the rest of the band. I like the genres of origin as inspiration, although what I play are bastardized versions of them all.
+                        Since I have been so into creating music, I have never really had the opportunity to enjoy doing cover songs. I can't even remember my own notes, so how can I remember anyone elses? 
+                        At the point of writing this, music creation has been a part of my life for half of my years of existence.
                 </div>
                 <div id="killContent" style="display:none">
                         <p>
@@ -85,6 +96,9 @@
                                 It is made for technical players who love to challenge themselves to no end through self discovery and experimentation.
                                 It gives you everything to be a performance artist of the future.
                         </p>
+                        <p>
+                                The best way to follow the development of Kill is to join my Discord server, <a class="discordLink">Michael's Studio</a>.
+                        </p>
                 </div>
                 <div id="videogamesContent" style="display:none">
                         <p>
@@ -98,17 +112,38 @@
                         <ul>
                                 <li>X-men vs. Street Fighter</li>
                                 <li>Castlevania : Dawn of Sorrow</li>
-                                <li>Final Fantasy XV</li>
-                                <li>Gundam Breaker 3</li>
                                 <li>Super Mario World</li>
                         </ul>
                         <p>
                                 Being the hidden gems of gaming, there is no audience waiting to watch. 
                                 Then again, there is no audience for technical gameplay. People don't understand what they never discovered. 
                                 However, if you stick around long enough to know me, you'll know what it means to move like a butterfly and sting like a bee.
-                                I still play some games that don't have hidden techniques, such as modern Mario, but that's the extent of it.
+                                I still play some games that don't have hidden techniques, such as modern Mario and some pretty strong 3rd person action games, but that's the extent of it.
+                                The honorable mentions are as follows:
                         </p>
-                        <p>My <a href="https://www.youtube.com/@michaelnguyenart">youtube channel</a> of course is where you'll find all progression of my gameplay.</p>
+                        <ul>
+                                <li>Super Mario 3d World</li>
+                                <li>Stranger of Paradise : Final Fantasy Origin</li>
+                                <li>Gundam Breaker 3</li>
+                                <li>Final Fantasy XV</li>
+                                <li>Senran Kagura - Burst Re:Newal</li>
+                        </ul>
+                        <p>
+                                The single player experience offers limitless expression through power-fantasy character dominance, although I really value the friendships made from the classic fighting game community where we found one another.
+                                We expect technical excellence through gameplay, something that is very rare. None of the groups I've fleetingly been a part of are remotely concerned about such things. This is why my presence is not a present for them.
+                                But in the case of the <a href="https://discord.gg/hvaxG56C4q">Online Arcade</a> Discord server, we gift one another with ass whoopings, all with the utmost grace and finesse. 
+                                I love to death how so many of them are better than me at all sorts of things. That mentality equals growth, and in turn, catch-up to them is entirely possible if you put your mind and heart into it.
+                                When I show myself to people who are begrudging of the gift, it's too uncomfortable to bear, and so I bail. Luckily, the fighting game community is a wonderful place.
+                        </p>
+                        <p>
+                                My <a class="ytLink" >youtube channel</a> of course is where you'll find all progression of my gameplay alongside guest appearances with my friends and fighters from all around the world.
+                                The channel is generally not for gaming discussion, as I find it appalling that playing is the least important aspect for viewership in today's world of video game content production. 
+                                I'm here to create performance art, not inundate with content in hopes of garnering subscriptions.
+                                The gift of art exists in places you wouldn't expect until someone lays it on you like this.
+                        </p>
+                </div>
+                <div id="friendsContent" style="display:none;">
+                        Friends!
                 </div>
         </div>
 </body>

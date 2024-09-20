@@ -1,8 +1,14 @@
-var pagelist = ['home','art','music','kill','videogames']
+var pagelist = ['home','art','music','kill','videogames', 'friends']
 $(document).ready(function(){
         linkButtons();
         makeTransitions();
+        makeLinks();
 })
+function makeLinks()
+{
+        $('.discordLink').attr('href', 'https://discord.gg/ZhUU69vCXy');
+        $('.ytLink').attr('href', 'https://www.youtube.com/@michaelnguyenart');
+}
 function makeTransitions()
 {
         var list = ['dc','yt'];
@@ -21,11 +27,11 @@ function makeTransitions()
 }
 function linkButtons()
 {
-        
         for(let i = 0; i < pagelist.length; i++) {
-                $('#'+pagelist[i]+'button').click(function(){
+                $('#'+pagelist[i]+'button').on('click touchstart', function(event) {
+                        event.preventDefault();
                         loadPage(pagelist[i]);
-                })
+                });
         }
 }
 function loadPage(page)
@@ -34,7 +40,6 @@ function loadPage(page)
                 $('#'+pagelist[i]+'Content').css('display', 'none');
                 $('#'+pagelist[i]+'button').removeClass('buttonSelected').addClass('button').css('pointer-events','auto');
         }
-        console.log(page);
         $('#'+page+'Content').css('display', 'block');
         $('#'+page+'button').addClass('buttonSelected').removeClass('button').css('pointer-events','none');
 }

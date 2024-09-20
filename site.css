@@ -27,6 +27,20 @@ body {
                 background-position-y: center 20px; /* Move background image up by 20px */
             }
 }
+.artcontainer
+{
+        display:none;
+        align-items:center;
+        justify-content: center;
+        flex-wrap: wrap;  /* Stack items vertically */
+        max-width: 100%;         /* Makes sure it doesn't overflow the page width */
+        width: 100%;             /* Ensures the container spans the full width */
+        gap:12px;
+}
+.monofont
+{
+        font-family:'Courier New', Courier, monospace;
+}
 a:visited
 {
         color:#4d85ff
@@ -38,6 +52,10 @@ a:link
 a:hover
 {
         color:#ffc400
+}
+.imagethumb
+{
+        border-radius:4px;
 }
 .buttoncontainer
 {
