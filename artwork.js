@@ -765,6 +765,7 @@ var artdescription2004 = [
         "Yawmouth",
         "YogiBear And BooBoo",
 ];
+//2004
 var art2004 = [
         "AmbyHentai.jpg",
         "AppleAmbew.jpg",
@@ -772,7 +773,7 @@ var art2004 = [
         "Badu.jpg",
         "BattleMarge.jpg",
         "BeavisAndButthead.jpg",
-        "BeefFarm.jpg",
+        "BeefFarm.JPG",
         "Birth.jpg",
         "Blackheart.jpg",
         "Blitzwing.jpg",
@@ -800,11 +801,11 @@ var art2004 = [
         "Garfield.jpg",
         "Goku.jpg",
         "GoldieActivate.jpg",
-        "GoldieBlast.jpg",
+        "GoldieBlast.JPG",
         "GoldieClash.jpg",
         "GoldieHall.jpg",
         "GoldieHyperDie.jpg",
-        "GoldieLox.jpg",
+        "GoldieLox.JPG",
         "GoldieMegaBlast.jpg",
         "GoldieMegaBlastDodge.jpg",
         "HaloLake.jpg",
