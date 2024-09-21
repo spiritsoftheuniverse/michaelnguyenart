@@ -1,10 +1,11 @@
 $(document).ready(function(){
         makeArtContainers();
 })
+var datestart = 1998;
+var dateend = 2024;
 function makeArtContainers()
 {
-        var datestart = 1998;
-        for(let i = datestart; i < (2024 + 1); i++) {
+        for(let i = datestart; i < (dateend + 1); i++) {
                 $('#artDates').append('<a class="artDate" href="javascript:void(0)" data="'+i+'">'+i+'</a> - ');
                 $('#artworksbody').append('<div class="artcontainer" id="artwork'+i+'">'+i+'</div>');
         }
@@ -33,6 +34,11 @@ function showArt(id)
                'color' : '#FFF',
        });
        hideArt()
+       
+       for(let i = datestart; i < (dateend + 1); i++) {
+                $('#artwork'+i).html('');
+        }
+
         $('#artwork'+id).css('display', 'flex').html('');
 
         for(let i = 0; i < artwork[id].art.length; i++) {
