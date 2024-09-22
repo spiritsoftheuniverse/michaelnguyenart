@@ -3170,7 +3170,6 @@ var art2021 = [
         "gifs (4).gif",
         "gifs (5).gif",
         "gifs (6).gif",
-        "gifs (7).gif",
         "gifs (8).gif",
         "gifs (9).gif",
         "gifs (10).gif",
