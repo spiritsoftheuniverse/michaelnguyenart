@@ -2447,7 +2447,6 @@ var art2014 = [
         "z_gifs (5).gif",
         "z_gifs (6).gif",
         "z_gifs (7).gif",
-        "z_gifs (8).gif",
         "z_gifs (9).gif",
         "z_gifs (10).gif",
         "z_gifs (11).gif",
