@@ -2693,18 +2693,6 @@ var art2018 = [
         "zketches.jpg",
 ];
 var art2019 = [
-        "_illus (1).jpg",
-        "_illus (2).jpg",
-        "_illus (3).jpg",
-        "_illus (4).jpg",
-        "_illus (5).jpg",
-        "_zketches (1).jpg",
-        "_zketches (1).png",
-        "_zketches (2).jpg",
-        "_zketches (2).png",
-        "_zketches (3).jpg",
-        "_zketches (4).jpg",
-        "_zketches (5).jpg",
         "killrenders (1).jpg",
         "killrenders (2).jpg",
         "killrenders (3).jpg",
