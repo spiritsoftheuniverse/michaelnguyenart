@@ -2606,13 +2606,7 @@ var art2017 = [
         "mjg_df_guitar.jpg",
 ];
 var art2018 = [
-        "zketches.jpg",
-        "_ds.jpg",
-        "_ds01.png",
-        "_ds02.png",
-        "_ds03.png",
-        "_ds04.png",
-        "dreamstrata_face_logo_HD.png",
+       "dreamstrata_face_logo_HD.png",
         "dreamstrata_text_loop_logo_1080.png",
         "dscharacters (1).jpg",
         "dscharacters (2).jpg",
@@ -2696,6 +2690,7 @@ var art2018 = [
         "zketches (29).jpg",
         "zketches (30).jpg",
         "zketches (31).jpg",
+        "zketches.jpg",
 ];
 var art2019 = [
         "_illus (1).jpg",
