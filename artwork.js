@@ -3483,14 +3483,14 @@ var art2022 = [
         "unicornGundam_16by9_3.jpg",
         "allblast.jpg",
         "boosterOfficer.jpg",
+        "XWing_tryFighter.jpg",
+        "viper.jpg",
         "cowboyBebop.jpg",
         "exoUnit.jpg",
         "galacticForce.jpg",
         "garneleTransport_buffChickenSwordsman.jpg",
         "greif_brontowar.jpg",
         "sweeps.jpg",
-        "XWing_tryFighter.jpg",
-        "viper.jpg",
 ];
 var art2023 = [
         "_illus (1) (2).jpg",
