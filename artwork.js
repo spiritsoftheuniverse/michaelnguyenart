@@ -3242,12 +3242,12 @@ var art2021 = [
         "dsSketches (9).jpg",
 ];
 var art2022 = [
-        "_mei (1).jpg",
-        "_mei (2).jpg",
-        "_mei (3).jpg",
-        "_mei (4).jpg",
-        "_mei (5).jpg",
-        "_mei (6).jpg",
+        "mei (1).jpg",
+        "mei (2).jpg",
+        "mei (3).jpg",
+        "mei (4).jpg",
+        "mei (5).jpg",
+        "mei (6).jpg",
         "2x1_turboBuggy.jpg",
         "2x1_turboBuggy_2.jpg",
         "31091ArceeChairCover.jpg",
