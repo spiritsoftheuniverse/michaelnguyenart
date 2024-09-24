@@ -3493,13 +3493,13 @@ var art2022 = [
         "sweeps.jpg",
 ];
 var art2023 = [
-         "zzillus (1) (2).jpg",
-        "zzillus (1).JPG",
-        "zzillus (2) (2).jpg",
+        "zzillus (1).jpg",
         "zzillus (2).jpg",
-        "zzillus (3) (2).jpg",
-        "zzillus (3).jpg",
+        "zzillus (3).JPG",
         "zzillus (4).jpg",
+        "zzillus (5).jpg",
+        "zzillus (6).jpg",
+        "zzillus (7).jpg",
         "abbyCadabby.jpg",
         "aladdin.jpg",
         "alice.jpg",
