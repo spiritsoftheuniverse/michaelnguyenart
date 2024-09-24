@@ -3,6 +3,16 @@ $(document).ready(function(){
 })
 var datestart = 1998;
 var dateend = 2024;
+var defaultstyle={
+        'text-decoration' : 'underline',
+        'pointer-events' : 'auto',
+        'color' : '#4d85ff',
+ };
+ var selstyle = {
+        'text-decoration' : 'none',
+        'pointer-events' : 'none',
+        'color' : '#FFF',
+};
 function makeArtContainers()
 {
         for(let i = datestart; i < (dateend + 1); i++) {
@@ -23,16 +33,10 @@ function makeArtContainers()
 }
 function showArt(id)
 {
-        $('.artDate').css({
-               'text-decoration' : 'underline',
-               'pointer-events' : 'auto',
-               'color' : '#4d85ff',
-        });
-       $('.artDate[data="'+id+'"]').css({
-               'text-decoration' : 'none',
-               'pointer-events' : 'none',
-               'color' : '#FFF',
-       });
+        
+        $('.artDate').css(defaultstyle);
+        $('#universelink').css(defaultstyle);
+       $('.artDate[data="'+id+'"]').css(selstyle);
        hideArt()
        
        for(let i = datestart; i < (dateend + 1); i++) {
@@ -61,6 +65,7 @@ function hideArt()
 function showUniverse()
 {
         hideArt();
+        $('#universelink').css(selstyle);
         if ($('#universeImage').length == 0) {
                 $('#universebody').html('<img id="universeImage" src="images/art/universe/universe.jpg" >').css('display', 'block');
             } else {
