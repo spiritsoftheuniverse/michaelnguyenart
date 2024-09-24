@@ -33,9 +33,8 @@ function makeArtContainers()
 }
 function resetArtLinkStyle()
 {
-        
         $('.artDate').css(defaultstyle);
-        $('#universelink').css(defaultstyle);
+        $('#universeLink').css(defaultstyle);
 }
 function showArt(id)
 {
@@ -70,7 +69,7 @@ function showUniverse()
 {
         hideArt();
         resetArtLinkStyle();
-        $('#universelink').css(selstyle);
+        $('#universeLink').css(selstyle);
         if ($('#universeImage').length == 0) {
                 $('#universebody').html('<img id="universeImage" src="images/art/universe/universe.jpg" >').css('display', 'block');
             } else {
