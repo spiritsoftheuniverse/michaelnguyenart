@@ -67,7 +67,7 @@ function showUniverse()
                 $('#universebody').css('display', 'block');
             }
         
-
+            $('#artpagedescription').html(pageDescription['universe']);
 }
 var pageDescription = {
         1998 : `Year of the red book. The only sketchbook I was religious about and managed to fill the whole thing, with collaborations and all. High school was a magic moment because there will never be a time where so many friends scribbled into one thing without much concern about who was an artist or not.
@@ -119,9 +119,11 @@ var pageDescription = {
         2022 : `The year of my brother getting into 3d printing as well as myself digging into Lego bricks and creating instruction sets to extend the life of official Lego sets. The passive income from this was decent enough so that I could buy soap and toothpaste for a minute. What pissed me off about the community though is that
                 all the vocal folks were not there to communicate any sort of appreciation, unless you count people begging for all my products to be free as appreciation.`,
         2023 : `After the abandonment of Dreamstrata and Lego, what do I do? I guess try to make a website that provides limitless inspiration with official data API's from all sorts of fields, such as fine arts, comics, video games, anime, etc. 
-                I created musical applications with advanced user interfaces to get you right into the thick of things. I scraped wiki's for all their data and created galleries of Mario art and Castlevania bestiaries. The site was phenomenal. The flagship application for the site was an infinite scrolling character encyclopedia. 
+                I created musical applications with advanced user interfaces to get you right into the thick of things. I scraped wiki's for all their data and created galleries of Mario art and Castlevania bestiaries. The site was phenomenal. 
+                The flagship application for the site was an infinite scrolling character encyclopedia, inspired by <a href="javascript:void(0)" onclick="showUniverse();" ontouchstart="showUniverse();">Universe</a>. 
                 As you can see, I managed to draw 100's of characters for it. What happened though? Why is it offline? Nobody gave a fuck about it, so how can I afford to keep it online?`,
         2024 : `I'm back with the ladies and gentleman at the Online Arcade. YoshiMii, HelloKenny, and Tonka travelled to EVO 2024 and took 3 places within the top 5 of X-men vs. Street Fighter tournament. What else is going to happen now? What is in store for the future?`,
+        universe : `Created in 2009.`,
 };
 var art1998 = [
         'killcomic(0).JPG',
