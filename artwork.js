@@ -31,11 +31,15 @@ function makeArtContainers()
                 showUniverse();
         });
 }
-function showArt(id)
+function resetArtLinkStyle()
 {
         
         $('.artDate').css(defaultstyle);
         $('#universelink').css(defaultstyle);
+}
+function showArt(id)
+{
+        resetArtLinkStyle();
        $('.artDate[data="'+id+'"]').css(selstyle);
        hideArt()
        
@@ -65,6 +69,7 @@ function hideArt()
 function showUniverse()
 {
         hideArt();
+        resetArtLinkStyle();
         $('#universelink').css(selstyle);
         if ($('#universeImage').length == 0) {
                 $('#universebody').html('<img id="universeImage" src="images/art/universe/universe.jpg" >').css('display', 'block');
