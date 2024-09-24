@@ -3806,11 +3806,11 @@ var art2023 = [
         "zzketches (139).jpg",
 ];
 var art2024 = [
-        "_illus (00).jpg",
-        "_illus (0).jpg",
-        "_illus (1).jpg",
-        "_illus (4).jpg",
-        "_illus (5).jpg",
+        "illus (2).jpg",
+        "illus (3).jpg",
+        "illus (4).jpg",
+        "illus (5).jpg",
+        "illus (6).jpg",
         "zketches (1).jpg",
         "zketches (4).jpg",
         "zketches (6).jpg",
