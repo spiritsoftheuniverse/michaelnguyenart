@@ -69,6 +69,8 @@ function showArt(id)
                         $('#artcontentbottom').append(makeVideo('GHJePu4vJKw'));
                 break;
                 case '2004' : 
+                        $('#artcontenttop').append(makeVideo('o-9ghVq8nNU'));
+                        $('#artcontenttop').append(makeVideo('X2rEI_SWOow'));
                         $('#artcontentbottom').append(makeVideo('uv_aPBFePeY'));
                 break;
                 case '2005' : 
