@@ -129,6 +129,17 @@ a:hover
         margin:0 auto;
         margin-top:12px;
 }
+.outboundbox
+{
+        border:1px solid #00fff21f;
+        border-radius:4px;
+        display:inline-flex;
+        justify-content: center; /* Centers the children horizontally */
+}
+.outboundp
+{
+        max-width:200px;
+}
 @media (max-width: 640px) {
         .contentbody {
             padding:8px;
