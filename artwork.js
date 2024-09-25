@@ -35,6 +35,8 @@ function resetArtLinkStyle()
 {
         $('.artDate').css(defaultstyle);
         $('#universeLink').css(defaultstyle);
+        $('#artcontenttop').html('');
+        $('#artcontentbottom').html('');
 }
 function showArt(id)
 {
@@ -58,6 +60,18 @@ function showArt(id)
             $('#artwork'+id).append(html);
         }
         $('#artpagedescription').html(pageDescription[id]);
+        console.log(id);
+        switch (id) {
+                case '2014':	
+                        $('#artcontenttop').html(makeVideo('s6cQoviWc7U'));
+                break;
+                default:
+                break;
+        }
+}
+function makeVideo(id)
+{
+        return '<div class="video-container"><iframe src="https://www.youtube.com/embed/'+id+'" frameborder="0" allowfullscreen></iframe></div>'
 }
 function hideArt()
 {
