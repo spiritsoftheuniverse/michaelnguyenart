@@ -122,6 +122,12 @@ a:hover
         font-weight: 400;
         font-style: normal;
 }
+.image
+{
+        max-width:100%;
+        border-radius:4px;
+        
+}
 .contentbody
 {
         padding:4px;
