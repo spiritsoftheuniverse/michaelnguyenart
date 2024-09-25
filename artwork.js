@@ -62,6 +62,19 @@ function showArt(id)
         $('#artpagedescription').html(pageDescription[id]);
         console.log(id);
         switch (id) {
+                case '2003' : 
+                        $('#artcontentbottom').append(makeVideo('GfWL-9htwPQ'));
+                        $('#artcontentbottom').append(makeVideo('39eZzhzEqcc'));
+                        $('#artcontentbottom').append(makeVideo('wVeVIQGAaAM'));
+                        $('#artcontentbottom').append(makeVideo('GHJePu4vJKw'));
+                break;
+                case '2004' : 
+                        $('#artcontentbottom').append(makeVideo('uv_aPBFePeY'));
+                break;
+                case '2005' : 
+                        $('#artcontentbottom').append(makeVideo('Gmcis9PZedM'));
+                        $('#artcontentbottom').append(makeVideo('JCai145iX4U'));
+                break;
                 case '2014':	
                         $('#artcontenttop').html(makeVideo('s6cQoviWc7U'));
                 break;

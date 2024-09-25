@@ -129,3 +129,21 @@ a:hover
         margin:0 auto;
         margin-top:12px;
 }
+@media (max-width: 640px) {
+        .contentbody {
+            padding:8px;
+        }
+        .button
+        {
+                padding: 4px;
+        }
+        .buttonseparator
+        {
+                margin:1px;
+                background-color:rgba(128, 255, 255, 0.15);
+                width:1px; height:1px;
+                display:flex;
+                align-self:center;
+                justify-self:center;
+        }
+}
