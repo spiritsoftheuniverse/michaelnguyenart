@@ -80,6 +80,10 @@ function showArt(id)
                 case '2014':	
                         $('#artcontenttop').html(makeVideo('s6cQoviWc7U'));
                 break;
+                case '2021':
+                        
+                        $('#artcontentbottom').append(makeVideo('y88NBsxL03M'));
+                break;
                 default:
                 break;
         }
