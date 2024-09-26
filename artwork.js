@@ -63,10 +63,11 @@ function showArt(id)
         console.log(id);
         switch (id) {
                 case '2003' : 
-                        $('#artcontentbottom').append(makeVideo('GfWL-9htwPQ'));
-                        $('#artcontentbottom').append(makeVideo('39eZzhzEqcc'));
-                        $('#artcontentbottom').append(makeVideo('wVeVIQGAaAM'));
-                        $('#artcontentbottom').append(makeVideo('GHJePu4vJKw'));
+                        $('#artcontentbottom').append(createVideo('01firstkill.mp4', true));
+                        $('#artcontentbottom').append(createVideo('ambybun.mp4', true));
+                        $('#artcontentbottom').append(createVideo('ambyshore.mp4', false));
+                        $('#artcontentbottom').append(createVideo('ambysnow.mp4', true));
+                        $('#artcontentbottom').append(createVideo('01newk.mp4', false));
                 break;
                 case '2004' : 
                         $('#artcontenttop').append(makeVideo('o-9ghVq8nNU'));
@@ -87,6 +88,22 @@ function showArt(id)
                 default:
                 break;
         }
+}
+function createVideo(source, looping)
+{
+        var loop = 'false';
+        if (looping)
+        {
+                loop = 'true';
+        }
+        var html = `
+                <video class="homevideo" controls loop="`+loop+`" >
+                        <source src="videos/`+source+`" type="video/mp4">
+                        Your browser does not support the video tag.
+                </video>
+        `;
+
+        return html;
 }
 function makeVideo(id)
 {
