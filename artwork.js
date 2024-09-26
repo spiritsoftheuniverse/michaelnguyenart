@@ -158,7 +158,7 @@ var pageDescription = {
                 I created musical applications with advanced user interfaces to get you right into the thick of things. I scraped wiki's for all their data and created galleries of Mario art and Castlevania bestiaries. The site was a very abundant place. 
                 The flagship application for the site was an infinite scrolling character encyclopedia, inspired by <a href="javascript:void(0)" onclick="showUniverse();" ontouchstart="showUniverse();">Universe</a>. 
                 As you can see, I managed to draw 100's of characters for it. What happened though? Why is it offline? Nobody cared, so how can I afford to keep it online?`,
-        2024 : `I'm back with the ladies and gentleman at the Online Arcade. YoshiMii, HelloKenny, and Tonka travelled to EVO 2024 and took 3 places within the top 5 of X-men vs. Street Fighter tournament. What else is going to happen now? What is in store for the future?`,
+        2024 : `I have returned to the ladies and gentleman at the Online Arcade. YoshiMii, HelloKenny, and Tonka travelled to EVO 2024 and took 3 places within the top 5 of X-men vs. Street Fighter tournament. What else is going to happen now? What is in store for the future?`,
         universe : `Created in 2009.`,
 };
 var art1998 = [
