@@ -39,6 +39,24 @@ body {
         max-width:calc(100% - 8px);
         margin:0 auto;
 }
+.linkTextContainer
+{
+        margin:8px;
+        max-width:400px;
+        text-align:left;
+}
+.linkimage
+{
+        border:none;
+        border-right:1px solid rgba(128, 255, 255, 0.164);
+        max-width:240px;
+}
+.linktag
+{
+        margin:0;
+        padding:0;
+        line-height:0;
+}
 .bodyGrid
 {
         position:fixed;
@@ -176,6 +194,15 @@ a:hover
 {
         border:1px solid #00fff21f;
         border-radius:4px;
+        display:inline-flex;
+        justify-content: center; /* Centers the children horizontally */
+}
+.linkbox
+{
+        border:1px solid #00fff21f;
+        background-color: rgba(0, 128, 255, 0.01);
+        border-radius:4px;
+        margin-bottom:12px;
         display:inline-flex;
         justify-content: center; /* Centers the children horizontally */
 }
