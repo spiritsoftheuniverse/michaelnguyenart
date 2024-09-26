@@ -2909,7 +2909,6 @@ var art2015 = [
 ];
 var art2016 = [
         "2pac.jpg",
-        "anna.jpg",
         "beatles.jpg",
         "bowser.jpg",
         "caitlyn.jpg",
