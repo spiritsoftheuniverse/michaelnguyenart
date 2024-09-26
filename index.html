@@ -35,6 +35,7 @@
 </head>
 <body>
         <div class="bodyGrid"></div>
+        <div class="bodyGradient"></div>
         <div class="buttoncontainer">
                 <div class="buttonseparator"></div>
                 <div class="buttonSelected" id="homebutton" style="border-bottom-left-radius:8px;">Michael Nguyen</div> <div class="buttonseparator"></div>
@@ -47,8 +48,10 @@
         <div class="contentbody" id="contentbody">
                 <div id="homeContent">
                         <div style="text-align:center;">
-                        <img class="image" style=" opacity:0.5;" src="images/portrait.jpg">
+                        <img class="image" style=" opacity:0.5; width:500px; " src="images/portrait.jpg">
                 </div>
+                
+                <div class="lineseparator"></div>
                         <p>
                                 Hello there. I am Michael Nguyen, an artist of the yesteryears. I was born in 1982. That would be nearly two decades before the internet found its way into households.
                                 I went to art school for traditional arts; experimenting with mediums like an illiterate chemist. A lot of time was spent onward doing digital illustration.
@@ -79,7 +82,8 @@
                 <div id="artContent" style="display:none">
                         <p class="monofont" id="artDates" style="line-height:1.6">
                         </p>
-                        <p id="artpagedescription"></p>
+                        <div class="lineseparator"></div>
+                        <p id="artpagedescription">Choose a year to browse artworks.</p>
                         <div id="artcontenttop"></div>
                         <div id="artworksbody"></div>
                         <div id="artcontentbottom" style="margin-top:12px;"></div>
@@ -91,6 +95,9 @@
                         At the point of writing this, music creation has been a part of my life for half of my years of existence.
                 </div>
                 <div id="killContent" style="display:none">
+                        <p style="text-align:center;"> 
+                        <img src="images/killlogo.png" id="killLogo" style="opacity:0.25;">
+                        </p>
                         <p>
                                 Kill is a 2.5d side scrolling action video game which commemorates the artistry of legacy video games while moving forward with graphical technology.
                                 It ignores modern commercial takes on game design and functionality. There are no graphical reduction options, as its intent is to bring full artistic fidelity to the screen.
@@ -98,27 +105,44 @@
                                 As the player of Kill, you take on a creative approach to playing. The reward is the journey and the growth of your skills.
                         </p>
                         <p>
+                                In the years 2019-2021, the game was called Dreamstrata. Moving into the future, it will be called Kill again.
                                 Kill is entirely non-narrative and all gameplay. The world is inspired by Super Metroid and Castlevania: Symphony of the Night. 
                                 The combat is inspired by classic fighting games with extreme technical finesse such as Marvel Super Heroes and X-men vs. Street Fighter.
                                 It is not only a matter of enemy resistance or challenging obstacles. Much of the challenge is being able to execute your actions well enough to open up all the fun in the game, which are the juggle mechanics and limitless transitions of actions. 
                                 It is made for technical players who love to challenge themselves to no end through self discovery and experimentation.
                                 It gives you everything to be a performance artist of the future.
                         </p>
-                        <p>
-                                The best way to follow the development of Kill is to join my Discord server, <a class="discordLink">Michael's Studio</a>.
-                        </p>
+                        
+                        <div class="lineseparator"></div>
+                        <div class="halfwidth">
+                                <p style="text-align:center; font-size:20px;">Progress</p>
+                                <p>
+                                        For the entire history of the character Kill, you can see it in the <a href="javascript:void()0;" id="killartlink">Art Gallery</a>. Specifically for earlier development cycles of the games, 
+                                        you can visit the Art Gallery in the years that follow: </p>
+                                        <ul>
+                                                <li><a href="javascript:void()0;" id="killdate2014">2014</a></li>
+                                                <li><a id="killdate2019" href="javascript:void()0;">2019</a></li>
+                                                <li><a href="javascript:void()0;" id="killdate2020">2020</a></li>
+                                                <li><a href="javascript:void()0;" id="killdate2021">2021</a></li>
+                                        </ul>
+                                
+                                <p>
+                                        The best way to follow the current development cycle of Kill is to join my Discord server, <a class="discordLink">Michael's Studio</a>.
+                                </p>
+                        </div>
                 </div>
                 <div id="videogamesContent" style="display:none">
                         <p>
-                                It's strange to say that I don't really enjoy video-games as a whole, despite growing up with them since Atari. I am a snob of hidden skills and techniques found in games that are very special in their design. The hidden skills and techniques in these games 
-                                bring mechanical intricacy and idiosyncrasies that make them play like no other. These games are classics at this point, occupying the era of the nasty 90's.
-                                I celebrate the beauty and mechanical finesse these classic games by continuing to play them. The most astonishing titles of all will come to a surprise to most, as these games are not revered by much people at all. These titles include:
+                                It's strange to say that I don't really enjoy video-games as a whole, despite growing up with them since Atari. I am a snob of hidden skills and techniques found in games that are very special in their design. These techniques in these games 
+                                bring mechanical intricacy and idiosyncrasies that make them play like no other. They are classics at this point, occupying the era of the nasty 90's. Developers today do not make anything like the games of this era.
+                                I celebrate the beauty and mechanical finesse of these classic games by continuing to play them. The most astonishing titles of all will come to a surprise to most, as these games are not revered by much people at all. These titles include:
                         </p>
                         <ul>
                                 <li>X-men vs. Street Fighter</li>
                                 <li>Castlevania : Dawn of Sorrow</li>
                                 <li>Super Mario World</li>
                         </ul>
+                        <div class="lineseparator"></div>
                         <p>
                                 Being the hidden gems of gaming, there is no audience waiting to watch. 
                                 Then again, there is no audience for technical gameplay unless people are competing for something, such as fighting game sets or speed-runs.
@@ -129,21 +153,36 @@
                                 These honorable mentions include:
                         </p>
                         <ul>
-                                <li>Super Mario 3d World</li>
                                 <li>Stranger of Paradise : Final Fantasy Origin</li>
                                 <li>Gundam Breaker 3</li>
                                 <li>Final Fantasy XV</li>
-                                <li>Senran Kagura - Burst Re:Newal</li>
                         </ul>
+                        <p>
+                                Despite not being the most popular games in the world and at times panned for their presentation (deservingly so), 
+                                each of these titles offer something more than your average game, such as speed, freedom of mobility, an abundance of offensive options, or a very unique set of controls that make them play more differently than any other of their type.
+                        </p>
                         <p>
                                 While the single player experience offers limitless expression through power-fantasy character dominance, I really value the friendships made from the classic fighting game community where we found one another.
                                 We expect technical excellence through gameplay, something that is very rare. None of the groups I've fleetingly been a part of are remotely concerned about such things. This is why my presence is not a present for them.
                                 But in the case of the <a href="https://discord.gg/hvaxG56C4q">Online Arcade</a> Discord server, we gift one another with ass whoopings, all with the utmost respect, grace, and finesse. 
                                 When I show myself to people who are begrudging of the gift, it's too uncomfortable to bear, and so I bail. Luckily, the fighting game community is a wonderful place that is not about that kind of shit.
                         </p>
+                        <div class="lineseparator"></div>
                         <p>
                                 My <a class="ytLink" >youtube channel</a> of course is where you'll find all progression of my game play alongside guest appearances with my friends and fighters from all around the world.
+                                
                         </p>
+                        <p>Youtube playlists of played games for organized binging : </p>
+                        <ul>
+                                <li>  <a href="https://www.youtube.com/watch?v=Vk1Jb4-5WGw&list=PLMPict9ghWwtNYJhyY1AUSL1zNSUhsHG3&pp=gAQBiAQB">Castlevania</a> </li>
+                                <li>      <a href="https://www.youtube.com/watch?v=05SGBEigwf0&list=PLMPict9ghWwuyC369HVLn6MsexMKgW40I&pp=gAQBiAQB">X-men vs. Street Fighter</a> </li>
+                                <li>      <a href="https://www.youtube.com/watch?v=a0K-nCJ27sk&list=PLMPict9ghWwsjGtNf5Zf6KfkDVx0_RcQN&pp=gAQBiAQB">Super Mario</a> </li>
+                                <li>       <a href="https://www.youtube.com/watch?v=r6IKEaZBMvw&list=PLMPict9ghWwug98uRZk9Ld5jy7ti-O9eW&pp=gAQBiAQB">Gundam Breaker 3</a> </li>
+                                <li>      <a href="https://www.youtube.com/watch?v=JCDa8yDi1mo&list=PLMPict9ghWwsBCT2QCYE8p2jo5T4MKIA8&pp=gAQBiAQB">Senran Kagura</a> </li>
+                                <li>      <a href="https://www.youtube.com/watch?v=wTuI9bGvUPE&list=PLMPict9ghWwtJfiTxN7Sany4-8Tbk7-PY&pp=gAQBiAQB">Final Fantasy</a> </li>
+                               
+                        </ul>
+
                 </div>
                 <div id="friendsContent" style="display:none;">
                         Friends!

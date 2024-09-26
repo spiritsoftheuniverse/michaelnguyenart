@@ -33,6 +33,19 @@ function linkButtons()
                         loadPage(pagelist[i]);
                 });
         }
+        $('#killartlink').on('click touchstart', function(event) {
+                event.preventDefault();
+                loadPage('art');
+        });
+        var dates = [2014, 2019, 2020, 2021];
+
+         for(let i = 0; i < dates.length; i++) {
+                $('#killdate'+dates[i]).on('click touchstart', function(event) {
+                        event.preventDefault();
+                        loadPage('art');
+                        showArt(dates[i]);
+                });
+        }
 }
 function loadPage(page)
 {
