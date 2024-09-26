@@ -8,10 +8,11 @@ function makeLinks()
 {
         $('.discordLink').attr('href', 'https://discord.gg/ZhUU69vCXy');
         $('.ytLink').attr('href', 'https://www.youtube.com/@michaelnguyenart');
+        $('.patreonLink').attr('href', 'https://patreon.com/michaelsArtwork');
 }
 function makeTransitions()
 {
-        var list = ['dc','yt'];
+        var list = ['dc','yt', 'pt'];
         for(let i = 0; i < list.length; i++) {
                 $('#'+list[i]+'logo').mouseenter(function(){
                         $(this).stop().animate({

@@ -5,6 +5,7 @@ body {
         margin:0;
         font-family: "abel";
         font-size:18px;
+        overflow-x: hidden;
 }
 .video-container {
         position: relative;
@@ -149,6 +150,13 @@ a:hover
         margin:0 auto;
         margin-top:12px;
 }
+.outboundContainer
+{
+        display:flex;
+        align-items:flex-start;
+        justify-content:center;
+        gap:12px;
+}
 .outboundbox
 {
         border:1px solid #00fff21f;
@@ -200,5 +208,8 @@ a:hover
         .halfwidth
         {
                 width:calc(100% - 16px);
+        }
+        .outboundContainer
+        { flex-wrap: wrap;
         }
 }
