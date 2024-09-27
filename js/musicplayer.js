@@ -353,15 +353,25 @@ function playSong(song, index) {
         audioPlayer.src = song;
         // Load the audio file
         audioPlayer.load();
-        // Ensure the file can be played before starting
-        audioPlayer.addEventListener('canplay', function() {
-            audioPlayer.play(); 
-            $('#playbutton').css('background-image', 'url(images/musicplayer/pause.png)');
-            audioPlayer.addEventListener('ended', function() {
-                seekTrack(1);
-            });
-        }, { once: true }); 
+        audioPlayer.removeEventListener('canplay', onCanPlay);
+        audioPlayer.addEventListener('canplay', onCanPlay, { once: true });
 }
+
+function onCanPlay() {
+        var audioPlayer = document.getElementById('musicPlayer');
+        audioPlayer.play(); 
+        $('#playbutton').css('background-image', 'url(images/musicplayer/pause.png)');
+    
+        // Remove any previous 'ended' event listener before adding a new one
+        audioPlayer.removeEventListener('ended', onEnded);
+        audioPlayer.addEventListener('ended', onEnded);
+    }
+    
+    // Define the ended event handler as a named function
+    function onEnded() {
+        seekTrack(1);  // Function to seek to the next track
+    }
+
 function seekTrack(index)
 {
         if(currentAlbumIndex == -1)
