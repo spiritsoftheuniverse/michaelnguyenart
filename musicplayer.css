@@ -17,7 +17,7 @@
       cursor:pointer;
       background-position:center;
       background-repeat:no-repeat;
-      background-size:contain;
+      background-size:70%;
 }
 .musicplayerButton:hover
 {
