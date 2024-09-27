@@ -90,10 +90,10 @@
                         <div id="artcontentbottom" style="margin-top:12px;"></div>
                 </section>
                 <section id="musicContent" style="display:none">
-                        <div style="text-align:center;">
+                        <nav class="musicPlayerDiv">
                                 <div class="musicplayerContainer">
                                         <div class="musicplayerButton" id="prevbutton" style="background-image:url(images/musicplayer/prev.png)">
-                                               
+                                        
                                         </div>
                                         <div class="musicplayerButton" id="playbutton" style="background-image:url(images/musicplayer/play.png)">
                                                 
@@ -102,7 +102,19 @@
                                         
                                         </div>
                                 </div>
-                        </div>
+                                <div class="sliderContainer">
+                                        <div class="vText">Volume</div>
+                                        <input type="range" id="volumeSlider" min="0" max="100" value="100">
+                                </div>
+                        </nav>
+                        <nav class="musicTracklistContainer">
+                                <div id="albumlisting"></div>
+                                <div id="tracklisting"></div>
+                        </nav>
+                        <audio controls style="display:none;" id="musicPlayer">
+                                <source id="musicSource"  type="audio/mpeg">
+                                Your browser does not support the audio element.
+                        </audio>
                 </section>
                 <section id="killContent" style="display:none">
                         <p style="text-align:center;"> 
