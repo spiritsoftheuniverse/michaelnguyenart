@@ -1,0 +1,25 @@
+
+.musicplayerContainer
+{
+        display:inline-flex;
+        border:1px solid rgba(0, 255, 255, 0.2);
+        border-radius:4px;
+}
+.musicplayerButton
+{
+      display:flex;  
+      width:50px;
+      height:50px;
+      border-right:1px solid rgba(0, 255, 255, 0.2);
+      background-color:rgba(0, 255, 255, 0.05);
+      justify-content:center;
+      align-items:center;
+      cursor:pointer;
+      background-position:center;
+      background-repeat:no-repeat;
+      background-size:contain;
+}
+.musicplayerButton:hover
+{
+        background-color:rgba(0, 255, 255, 0.15);
+}
