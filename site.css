@@ -235,6 +235,15 @@ a:hover
         max-width:200px;
         background-image:url(images/littleline2percent.png);
 }
+.innerContentPanel
+{
+        padding:8px; border-bottom: 1px solid rgba(0, 255, 255, 0.1);margin-bottom: 12px;
+}
+.innerContentPanelColored
+{
+        padding:8px; border-bottom: 1px solid rgba(0, 255, 255, 0.1);margin-bottom: 12px;
+        background-color: rgba(0, 255, 255, 0.05);
+}
 #killLogo
 {
         filter: hue-rotate(0deg); /* Starting hue */
