@@ -16,7 +16,7 @@ var defaultstyle={
 function makeArtContainers()
 {
         for(let i = datestart; i < (dateend + 1); i++) {
-                $('#artDates').append('<a class="artDate" href="javascript:void(0)" data="'+i+'">'+i+'</a> - ');
+                $('#artDates').append('<a class="artDate" href="javascript:void(0)" data="'+i+'">'+i+'</a> . ');
                 $('#artworksbody').append('<div class="artcontainer" id="artwork'+i+'">'+i+'</div>');
         }
         $('#artDates').append('<a id="universeLink" href="javascript:void(0)" >Universe</a>');
