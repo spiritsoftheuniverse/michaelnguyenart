@@ -36,6 +36,8 @@ $(document).ready(function(){
         makeTransitions();
         makeLinks();
         drawFriends();
+        var date = new Date();
+        $('#currentdate').html(date.getFullYear());
 })
 function drawFriends()
 {
