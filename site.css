@@ -6,6 +6,7 @@ body {
         font-family: "abel";
         font-size:18px;
         overflow-x: hidden;
+        background-image:url(images/littleSquares1percent.png);
 }
 .video-container {
         position: relative;
@@ -124,6 +125,8 @@ a:hover
         color: white;
         padding: 20px;
         margin-top:0;
+        background-image:url(images/littleSquares.png);
+        
 }
 .buttonSelected
 {
