@@ -121,7 +121,7 @@ function showUniverse()
         resetArtLinkStyle();
         $('#universeLink').css(selstyle);
         if ($('#universeImage').length == 0) {
-                $('#universebody').html('<img id="universeImage" src="images/art/universe/universe.jpg" >').css('display', 'block');
+                $('#universebody').html('<img id="universeImage" src="images/art/universe/universe.jpg" class="image">').css('display', 'block');
             } else {
                 $('#universebody').css('display', 'block');
             }
