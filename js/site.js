@@ -11,7 +11,7 @@ var friendslinks = [
                 description : 'The home of Zamfofex at Neocities. A buddy I met from the Ninja Girls Academy era, who is an artistic programmer.',
         },
         {
-                link : 'https://www.youtube.com/@MollyJaneGain',
+                link : 'https://mollyjanegain.com/',
                 image : 'images/links/mjg.jpg',
                 description : 'Molly Jane Gain. A pal from days of old, who is an acoustic live musician, also working magic in studio.',
         },
