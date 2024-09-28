@@ -368,9 +368,9 @@ function onCanPlay() {
     }
     
     // Define the ended event handler as a named function
-    function onEnded() {
+function onEnded() {
         seekTrack(1);  // Function to seek to the next track
-    }
+}
 
 function seekTrack(index)
 {
