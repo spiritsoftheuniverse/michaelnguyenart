@@ -298,12 +298,10 @@ function populateTrackList()
                 event.preventDefault();
                 $('.musicTrackTitle').css({
                         'font-weight' : 'normal',
-                        'pointer-events' : 'auto',
                         'color' : '#999',
                 });
                 $(this).css({
                         'font-weight' : 'bold',
-                        'pointer-events' : 'none',
                         'color' : '#FFF',
                 });
                 setSelectedTrack($(this).attr('data-index'))
@@ -317,12 +315,10 @@ function setSelectedTrack(index)
 {
         $('.musicTrackTitle').css({
                 'font-weight' : 'normal',
-                'pointer-events' : 'auto',
                 'color' : '#999',
         });
         $('.musicTrackTitle[data-index="'+index+'"]').css({
                 'font-weight' : 'bold',
-                'pointer-events' : 'none',
                 'color' : '#FFF',
         });  
 }
