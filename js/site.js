@@ -38,6 +38,19 @@ $(document).ready(function(){
         drawFriends();
         var date = new Date();
         $('#currentdate').html(date.getFullYear());
+
+        $(window).scroll(function() {
+                if ($(this).scrollTop() > 100) { // If the user scrolls down more than 100px
+                    $('.scrollup').css('display', 'flex'); // Show the scrollup button with a fade-in effect
+                } else {
+                    $('.scrollup').css('display', 'none'); // Hide the scrollup button with a fade-out effect
+                }
+            });
+
+        $('.scrollup').on('click touchstart', function(e) {
+                e.preventDefault(); // Prevent default anchor behavior
+                $('html, body').animate({scrollTop: 0}, 400); // Animate scrolling to the top
+            });
 })
 function drawFriends()
 {
