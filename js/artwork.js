@@ -59,7 +59,7 @@ function showArt(id)
                 var html = '<div><a href="images/art/'+id+'/'+encodeURIComponent(artwork[id].art[i])+'" data-lightbox="imageset" '+title+'><img class="imagethumb" src="images/art/'+id+'/t/'+encodeURIComponent(artwork[id].art[i])+'"></a></div>';
             $('#artwork'+id).append(html);
         }
-        $('#artpagedescription').html(pageDescription[id]);
+       // $('#artpagedescription').html(pageDescription[id]);
         console.log(id);
         switch (id) {
                 case '2003' : 
