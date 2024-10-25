@@ -201,6 +201,86 @@ var ninjastoryalbum = [
                 name : 'Wrath of the Good Ninjas',
         },
 ];
+
+var electrostaticalbum = [
+        {
+                file : "01-Welcoming Committee.mp3",
+                name : 'Welcoming Committee',
+        },
+        {
+                file : "02-Remember Him.mp3",
+                name : 'Remember the Rocket Rider',
+        },
+        {
+                file : "03-Error on Trial.mp3",
+                name : 'Error On Trial',
+        },
+        {
+                file : "04-Starborn Cowboy.mp3",
+                name : 'Starborn Cowboy',
+        },
+        {
+                file : "05-Space Weather.mp3",
+                name : 'Space Weather',
+        },
+        {
+                file : "06-Phantom Hounds.mp3",
+                name : 'Phantom Hounds',
+        },
+        {
+                file : "07-Twisted Amphibians.mp3",
+                name : 'Twisted Amphibians',
+        },
+        {
+                file : "08-Game Center.mp3",
+                name : 'The Arcade',
+        },
+        {
+                file : "09-Bloom.mp3",
+                name : 'Bloom',
+        },
+        {
+                file : "10-Lost Highway.mp3",
+                name : 'Lost Highway',
+        },
+        {
+                file : "11-Labyrinth.mp3",
+                name : 'Labyrinth',
+        },
+        {
+                file : "12-Birth of the Psycho Princess.mp3",
+                name : 'Birth of the Psycho Princes',
+        },
+        {
+                file : "13-Loving Murder Skills.mp3",
+                name : 'Loving Murder Skills',
+        },
+        {
+                file : "14-Goodbye.mp3",
+                name : 'This is Goodbye',
+        },
+        {
+                file : "15-Rhythm Arena.mp3",
+                name : 'Rhythm Arena',
+        },
+        {
+                file : "16-Acid Rain.mp3",
+                name : 'Acid Rain',
+        },
+        {
+                file : "17-Sacrifice.mp3",
+                name : 'Sacrifice',
+        },
+        {
+                file : "18-Kill Vs Avobette.mp3",
+                name : 'Kill vs. Avobette',
+        },
+        {
+                file : "19-The End of the World.mp3",
+                name : 'The End of the World',
+        },
+];
+
 var albumlist = [
         {
                 name : 'Time is of the Essence',
@@ -211,6 +291,11 @@ var albumlist = [
                 name : 'Ninja Story',
                 folder: 'ninjastory',
                 data : ninjastoryalbum,
+        },
+        {
+                name : 'Electrostatic',
+                folder: 'electrostatic',
+                data : electrostaticalbum,
         },
         {
                 name : 'Dreamstrata Soundtrack',
@@ -291,7 +376,9 @@ function populateTrackList()
         $('.musicAlbumTitle:last').css('border-bottom', '1px solid rgba(0, 255, 255, 0.15)');
         for(let i = 0; i < list.length; i++) {
             var song = list[i];
-            var html = `<div class="musicTrackTitle" data="music/`+folder+`/`+song.file+`" data-index="`+i+`">`+(i + 1)+`. `+song.name+`</div>`;
+            var songfile = encodeURIComponent(song.file);
+
+            var html = `<div class="musicTrackTitle" data="music/`+folder+`/`+songfile+`" data-index="`+i+`">`+(i + 1)+`. `+song.name+`</div>`;
             $('#tracklisting').append(html);
         }
         $('.musicTrackTitle').on('click touchstart', function(event) {
