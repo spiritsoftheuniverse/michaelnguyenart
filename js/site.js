@@ -21,11 +21,6 @@ var friendslinks = [
                 description : 'Tonka. Fellow Castlevania enthusiast, enjoyer of life, and Marvel Super Heroes champion.',
         },
         {
-                link : 'https://www.youtube.com/@Doobie843',
-                image : 'images/links/doobie.jpg',
-                description : 'Doobie Scholar. Always with a profile pic to sex up all the ladies, Doobie is an all around strong fighter in every fighting game.',
-        },
-        {
                 link : 'https://www.youtube.com/@liquidmetal-x',
                 image : 'images/links/lmx.jpg',
                 description : 'Liquid Metal X, one of the best in the world in the realm of Capcom Marvel games in between the first and last titles of the classics.',
@@ -72,10 +67,11 @@ function makeLinks()
         $('.discordLink').attr('href', 'https://discord.gg/ZhUU69vCXy');
         $('.ytLink').attr('href', 'https://www.youtube.com/@michaelnguyenart');
         $('.patreonLink').attr('href', 'https://patreon.com/michaelsArtwork');
+        $('.kofiLink').attr('href', 'https://ko-fi.com/treehousestudio');
 }
 function makeTransitions()
 {
-        var list = ['dc','yt', 'pt'];
+        var list = ['dc','yt', 'pt', 'kofi'];
         for(let i = 0; i < list.length; i++) {
                 $('#'+list[i]+'logo').mouseenter(function(){
                         $(this).stop().animate({
